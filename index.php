@@ -1,11 +1,12 @@
 <?php
 class Fruit{
-     $fruit1 = "orange";
-     $fruit2 = "banana"
+     private  $fruit1 = "orange";
+     private  $fruit2 = "banana";
 
    public function getAllFruit(){
-         return " I like $this->fruit1 and $this->fruit2"
+          echo  " I like $this->fruit1 and $this->fruit2";
      }
 }
-getAllFruit()
+$fruit = new Fruit();
+$fruit->getAllFruit();
 ?>
