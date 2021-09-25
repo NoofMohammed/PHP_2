@@ -3,6 +3,7 @@ class Fruit{
      public  $fruit1 = "orange";
      private  $fruit2 = "banana";
 
+
    public function getAllFruit(){
      //    return " I like $this->fruit1 and $this->fruit2";
           echo  " I like $this->fruit1 and $this->fruit2";
@@ -11,6 +12,7 @@ class Fruit{
      //     return "give me $this->fruit1";
          echo "give me $this->fruit1";
      }
+     
 }
 $fruit = new Fruit();
 $fruit->getAllFruit(). '<br>';
@@ -22,4 +24,22 @@ class Apple extends Fruit{
 $fruit3 = new Apple;
 echo $fruit3->fruit1;
 echo $fruit3->benefits;
+
+class Food{
+     private $vegetable = "potato";
+     // getters
+     public function getVegetable(){
+          return $this->vegetable;
+     }
+     // setters
+     public function setVegetable($newVegetable){
+          $this->vegetable = $newVegetable;
+     }
+}
+$vegetable1= new Food;
+// getters
+echo $vegetable1->getVegetable();
+// setters
+echo $vegetable1->setVegetable("tomato");
+echo $vegetable1->getVegetable();
 ?>
