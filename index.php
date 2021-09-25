@@ -26,7 +26,7 @@ $fruit->getFruit1();
 // $anotherFruit = new Fruit("Kiwi", "apple");
 // echo $anotherFruit->fruit1;
 // echo $anotherFruit->fruit3;
-
+// ----------------------------------------------******-----------------------------------------
 class Apple extends Fruit{
      public $benefits="Weight Loss";
      // Constructor class (2)
@@ -41,7 +41,7 @@ class Apple extends Fruit{
 $useful = new Apple("fastDigestion");
 echo $useful->benefits;
 
-
+// -------------------------------------******------------------------------------------
 class Food{
      private $vegetable = "potato";
      public $favoriteVegetable = "zucchini";
